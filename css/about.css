@@ -1,0 +1,91 @@
+@import "variable.css";
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+/*Header Part */
+header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 15px;
+     background-color: var(--bg);
+     border-bottom: 4px solid var(--fullstack);
+     color: white;
+}
+header span{
+     color: var(--fullstack);
+}
+.nav{
+     display: flex;
+     padding: 5px;
+     gap: 0.8rem;
+}
+div a{
+     color: white;
+     text-decoration: none;
+     font-size: 1.1rem;
+}
+/* ARTİCLE */
+
+.article{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 20px 30px;
+     padding:1.1rem;
+     white-space: nowrap;
+     background-color: var(--bg);
+}
+.article p{
+     font-weight: 800;
+     font-size: 1.2rem;
+}
+.article input{
+     padding: 0.3rem;
+}
+.article button{
+     padding: 0.3rem;
+     border-radius: 5px;
+     background-color: orange;
+     color: black;
+}
+/* MAIN PART */
+
+.main{
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     text-align: center;
+}
+.text{
+     background-color: var(--bg);
+}
+.par{
+     margin-top: 1rem;
+}
+.par2{
+     height: 150px;
+
+}
+.text h3{
+     margin-top: 0.8rem;
+}
+/* Footer */
+
+.footer{
+     background-color: var(--bg);
+     text-align: center;
+     padding: 1rem;
+}
+.footer img{
+     width: 250px;
+}
+@media screen and(max-width:600px){
+     header, main, .article{
+          flex-direction: column;
+     }
+     
+}
